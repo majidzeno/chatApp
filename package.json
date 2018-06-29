@@ -5,7 +5,9 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "turn2branch": "git checkout -b gh-pages",
+    "push2branch": "git subtree push--prefix dist origin gh-pages"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
