@@ -1,0 +1,100 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat {
+    flex-basis: 91%;
+    border: 1px solid salmon;
+    display: flex;
+    flex-flow: column nowrap;
+    &__header {
+        // height: 10vh; // border: 1px solid blue;
+        padding: 0 1em;
+        flex-basis: 10%;
+        background: linear-gradient(to right, #FF9800 0%, #FFEB3B 100%);
+    }
+    &__body {
+        padding: 4%;
+        flex-basis: 83%;
+        overflow: scroll;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    &__message{
+        flex-basis: 6%;
+        border: 1px solid black;
+        max-height: 6%;
+        textarea{
+            max-height: 6%;
+            margin: 0;
+        }
+    }
+}
+
+.userChat {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &__avatar {
+        position: relative;
+        width: 7%;
+        margin: 1%;
+        &__container {
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 100%;
+            border-radius: 50%;
+        }
+    }
+    &__meta {
+        color: white;
+    }
+}
+
+.admin {
+    &__message {
+        background-color: #FF9800;
+        position: relative;
+        padding: 1em;
+        border-radius: 8px;
+        font-style: italic;
+        width: fit-content;
+        align-self: flex-end;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0px 10px 10px;
+            border-color: transparent transparent transparent #FF9800;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.user {
+    &__message {
+        background-color: #FFEB3B;
+        position: relative;
+        padding: 1em;
+        border-radius: 8px;
+        font-style: italic;
+        width: fit-content;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #FFEB3B transparent transparent;
+            top: 50%;
+            right: 100%;
+            transform: translateY(-50%);
+        }
+    }
+}

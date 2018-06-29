@@ -1,0 +1,12 @@
+{
+    "users": [{
+        "id": 1,
+        "name": "ichigo",
+        "status": "online",
+        "image": "tShelby.jpg",
+        "thread": {
+            "admin": "Hey",
+            "user": "hey admin"
+        }
+    }]
+}

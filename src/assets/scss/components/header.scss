@@ -1,0 +1,56 @@
+.header {
+    // box-shadow: 0px 0px 2px yellowgreen;
+    background: linear-gradient(to right, #FFEB3B 0%, #FF9800 100%);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8em;
+    padding-left: 9%;
+    height: 10vh;
+    .logo {
+        // border: 1px solid;
+        font-family: -webkit-body;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid yellowgreen;
+        border-right: 1px solid yellowgreen;
+        padding-right: 1em;
+    }
+    &__group {
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    &__element {
+        padding: 0 1em;
+        .fa {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.admin {
+    // border: 1px solid blue;
+    padding: 1em;
+    &__avatar {
+        position: relative;
+        .circle {
+            position: absolute;
+            top: 80%;
+            right: 10%;
+            color: #22b322;
+            height: 1rem;
+            width: 1rem; // z-index: 1;
+            background-color: #22b322;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        &__container {
+            padding-top: 100%;
+            width: 3.5em;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    }
+}
